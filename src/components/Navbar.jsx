@@ -20,10 +20,10 @@ const Navbar = () => {
       </div>
       {/* Meny länkar */}
       <div className={isOpen ? 'menu open' : 'menu'}>
-        <Link to="/" onClick={toggleMenu}>Hem</Link>
-        <Link to="/about" onClick={toggleMenu}>Om Mig</Link>
-        <Link to="/projects" onClick={toggleMenu}>Projekt</Link>
-        <Link to="/contact" onClick={toggleMenu}>Kontakt</Link>
+        <Link to="/" onClick={toggleMenu}>Home</Link>
+        <Link to="/about" onClick={toggleMenu}>About Me</Link>
+        <Link to="/projects" onClick={toggleMenu}>Projects</Link>
+        <Link to="/contact" onClick={toggleMenu}>Contact</Link>
       </div>
     </nav>
   );

@@ -1,20 +1,32 @@
 import React from 'react';
-import '../index.css'; // Inkludera gemensamma stilar
+import '../index.css'; // Include common styles
+import avatar from '../assets/avatar.jpg'; // Import your avatar image
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'; // Import icons
 
 const About = () => {
   return (
     <div className="aboutme-container">
-        <h1 className="aboutme-heading">Om Mig</h1>
-        <p className="aboutme-description">Hej! Mitt namn är Emma Dybdorf. Jag är en passionerad webbutvecklare med erfarenhet av att skapa responsiva och användarvänliga webbplatser. Jag älskar att lära mig nya tekniker och förbättra mina färdigheter kontinuerligt.</p>
-        <h2 className="aboutme-subheading">Färdigheter</h2>
-        <ul className="aboutme-list">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-        <h2 className="aboutme-subheading">Bakgrund</h2>
-        <p className="aboutme-description">Jag har en bakgrund inom datavetenskap från Folkuniversitetet, och jag har arbetat med flera projekt som involverar både frontend och backend utveckling.</p>
+        <div className="aboutme-header">
+            <div className="aboutme-header-content">
+                <img src={avatar} alt="Emma Dybdorf" className="aboutme-avatar" />
+                <h1 className="aboutme-heading">About Me</h1>
+            </div>
+        </div>
+        <p className="aboutme-description">Hello! My name is Emma Dybdorf. I am a passionate web developer with experience in creating responsive and user-friendly websites. I love learning new techniques and continuously improving my skills.</p>
+        <div className="aboutme-skills">
+            <h2 className="aboutme-subheading">Skills</h2>
+            <div className="aboutme-skills-icons">
+                <div className="skill-box"><FaHtml5 className="skill-icon" /><span>HTML/CSS</span></div>
+                <div className="skill-box"><FaCss3Alt className="skill-icon" /><span>CSS</span></div>
+                <div className="skill-box"><FaJs className="skill-icon" /><span>JavaScript</span></div>
+                <div className="skill-box"><FaReact className="skill-icon" /><span>React</span></div>
+                <div className="skill-box"><FaNodeJs className="skill-icon" /><span>Node.js</span></div>
+            </div>
+        </div>
+        <div className="aboutme-background">
+            <h2 className="aboutme-subheading">Background</h2>
+            <p className="aboutme-description">I have a background in computer science from Folkuniversitetet, and I have worked on several projects involving both frontend and backend development.</p>
+        </div>
     </div>
   );
 };

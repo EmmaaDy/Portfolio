@@ -3,26 +3,8 @@
     margin: 0;
     padding: 0;
     background-color: #f2f4f5;  /* Exempel på bakgrundsfärg */
-}
-
-.header {
-    background-color: #f2f4f5;  /* Exempel på bakgrundsfärg */
-    padding: 20px;
-    text-align: center;
-    color: black;
-}
-.header h1 {
-    font-size: 2em; /* Gör rubriken större */
-    text-transform: uppercase; /* Använd stora bokstäver för rubriken */
-  }
-
-.first-letter {
-    font-size: 1.5em; /* Exempel på storlek */
-    color: #1679b7; /* Exempel på färg */
-    font-weight: bold; /* Exempel på fetstil */
-  }
-  
-/* Navbar.css */
+}  
+/* Navbar */
 
 nav {
     display: flex;
@@ -30,19 +12,19 @@ nav {
     align-items: center;
   }
   
-  .hamburger {
+.hamburger {
     display: block; /* Visa hamburgerikonen i alla lägen */
     cursor: pointer;
   }
   
   /* Meny länkar */
-  .menu {
+.menu {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 35%;  /* Centrera vertikalt */
-    left: 50%; /* Centrera horisontellt */
-    transform: translate(-50%, -50%); /* Justera så att centrum av elementet ligger i mitten */
+    top: 38%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     width: 100%;
     max-width: 50rem;
     margin: 0 auto;
@@ -54,44 +36,48 @@ nav {
 }
   
   /* Stilar för hamburgermenyn när den är öppen */
-  .menu.open {
+
+.menu.open {
     display: flex; /* Visa menyn när den är öppen */
     border-color: #000000; /* Ändra ramfärgen när menyn är öppen */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Lägg till en skugga när menyn är öppen */
   }
   
-  .menu.open a {
-    color: #000000; /* Ändra länkfärgen när menyn är öppen */
+  .menu a {
+    text-decoration: none; /* Ta bort understrykning från länkarna */
+    margin-bottom: 10px; /* Avstånd mellan länkarna */
+    color: black;
   }
   
+  
   /* Media query för att justera placeringen av menyn när skärmen är mindre än 768px */
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu {
       top: 60px; /* Justera avståndet från toppen när skärmen är mindre än 768px */
     }
-  }
+}
   
   
   
   /* Stilar för hamburgerikonsymbolen */
-  .line {
+.line {
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 5px;
     transition: transform 0.3s ease; /* Lägg till en smidig övergång */
-  }
+}
   
   /* Stilar för hamburgarikonsymbolen när menyn är öppen */
-  .line.open.line1 {
+.line.open.line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
   
-  .line.open.line2 {
+.line.open.line2 {
     opacity: 0;
   }
   
-  .line.open.line3 {
+.line.open.line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
   
@@ -158,103 +144,176 @@ nav {
   .home-link:hover .gallery-caption {
     opacity: 1; /* Visa texten när man håller över länken */
   }
-  
+
+/* Styles for the About Me page */
 
 .aboutme-container {
-    /* Stilar för den yttre behållaren */
-    margin: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    
-    /* Flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrera innehållet vertikalt */
-    align-items: center; /* Centrera innehållet horisontellt */
+  /* Container styles */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Center text content */
+  max-width: 800px; /* Set a max-width for better responsiveness */
 }
-  
+
+.aboutme-header {
+  /* Header styles */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.aboutme-avatar {
+  /* Avatar styles */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
 .aboutme-heading {
-    /* Stilar för rubriken */
-    font-size: 2rem;
-    color: #333;
+  /* Heading styles */
+  font-size: 2rem;
+  color: #333;
 }
-  
+
 .aboutme-description {
-    /* Stilar för beskrivningen */
-    font-size: 1rem;
-    color: #666;
+  /* Description styles */
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
 }
-  
+
 .aboutme-subheading {
-    /* Stilar för underrubrik */
-    font-size: 1.5rem;
-    color: #333;
+  /* Subheading styles */
+  font-size: 1.5rem;
+  color: #333;
 }
-  
-.aboutme-list {
-    /* Stilar för listan */
-    padding: 0;
-    margin: 0;
-    list-style: none;
+
+.aboutme-skills {
+  /* Skills section styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
-  
-.aboutme-list li {
-    /* Stilar för listelementen */
-     margin-bottom: 0.5rem;
+
+.skill-box {
+  /* Skill box styles */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.skill-icon {
+  /* Icon styles */
+  margin-right: 5px;
+}
+
+.aboutme-background {
+  /* Background section styles */
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+/* Prodject  */
+
 .projects-container {
-    /* Stilar för den yttre behållaren */
-    margin: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    
-    /* Flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrera innehållet vertikalt */
-    align-items: center; /* Centrera innehållet horisontellt */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-  
+
 .projects-heading {
-    /* Stilar för rubriken */
-    font-size: 2rem;
-    color: #333;
+  color: #333;
+  text-align: center;
 }
-  
+
 .projects-description {
-    /* Stilar för beskrivningen */
-    font-size: 1rem;
-    color: #666;
-    text-align: center; /* Centrera texten horisontellt */
-    padding: 0 20px; /* Lägg till padding på sidorna för att undvika att texten hamnar långt ut på kanten */
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.projects-container a, 
+.projects-container a:visited, 
+.projects-container a:hover, 
+.projects-container a:active {
+  color: black; /* Eller vilken färg du vill ha */
+  text-decoration: none; /* Tar bort understrykningen */
+}
+
+/* Contact */
+
 .contact-container {
-    /* Stilar för den yttre behållaren */
-    margin: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    
-    /* Flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrera innehållet vertikalt */
-    align-items: center; /* Centrera innehållet horisontellt */
+  padding: 20px;
+  background-color: #f8f9fa; /* Ljus grå bakgrundsfärg */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Lägg till lite skugga för djup */
+  max-width: 600px;
+  margin: 40px auto; /* Centrera kontaktrutan */
 }
-  
+
 .contact-heading {
-    /* Stilar för rubriken */
-    font-size: 2rem;
-    color: #333;
+  color: #333; /* Mörkare textfärg */
+  text-align: center; /* Centrera rubriken */
 }
-  
+
 .contact-description {
-    /* Stilar för beskrivningen */
-    font-size: 1rem;
-    color: #666;
-    text-align: center; /* Centrera texten horisontellt */
-    padding: 0 20px; /* Lägg till padding på sidorna för att undvika att texten hamnar långt ut på kanten */
+  text-align: center; /* Centrera beskrivningstexten */
+  color: #666; /* Ljusare textfärg */
+  margin-bottom: 20px; /* Lägg till marginal under texten */
 }
-  
-  
-    
-  
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 8px;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
