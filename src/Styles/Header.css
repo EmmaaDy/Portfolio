@@ -1,0 +1,30 @@
+/* Header.css */
+header {
+    background-color: #343a40; /* Mörk bakgrundsfärg */
+    color: white; /* Vit text */
+    padding: 10px 20px; /* Lite padding runt texten */
+    text-align: center; /* Centrerar texten */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Lägger till en liten skugga under headern */
+  }
+  
+  header h1 {
+    margin: 0; /* Tar bort standardmarginalen */
+    font-size: 24px; /* Större text för titeln */
+  }
+  
+  nav {
+    display: flex; /* Flexbox för att ordna länkar */
+    justify-content: center; /* Centrerar länkarna i navbaren */
+    padding: 10px 0; /* Padding ovanför och under nav-länkarna */
+  }
+  
+  nav a {
+    color: white; /* Vit text för länkarna */
+    text-decoration: none; /* Ingen understrykning av länkar */
+    margin: 0 15px; /* Marginal mellan länkarna */
+    font-size: 18px; /* Större text för lättare läsbarhet */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Understrykning när man hovrar över länkarna */
+  }
