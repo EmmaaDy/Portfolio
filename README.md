@@ -40,7 +40,7 @@ Integrate an external API, like the GitHub API, to automatically display the lat
 ## Contact Me
 If you have any questions, suggestions, or would like to discuss the project, do not hesitate to contact me:
 
-- Email: [emma.dybdorf@example.com](mailto:emma.dybdorf@dybdorf.com)
+- Email: [emma.dybdorf@hotmail.com](mailto:emma.dybdorf@dybdorf.com)
 - LinkedIn: [Emma Dybdorf](https://www.linkedin.com/in/emma-dybdorf-023315290/)
 
 ## License
