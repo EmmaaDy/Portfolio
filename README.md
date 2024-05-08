@@ -1,5 +1,9 @@
 # My CV - An Interactive Single Page Application (SPA)
 
+![Preview-image-1](/assets/Portfolio.png)
+
+![Preview-image-2](/assets/Portfolio2.png)
+
 ## Description
 
 My CV is an interactive Single Page Application (SPA) developed using React, Redux for global state management, and React Router for navigation between different sections. The application serves as my digital CV and personal website, where users can get to know me through information about my skills, experiences, projects, and contact details.
