@@ -10,12 +10,12 @@ För att köra projektet lokalt, följ dessa steg:
 
 ### Klona projektet från GitHub-repot:
 bash
-git clone https://github.com/ditt-anvandarnamn/mitt-cv.git
+git clone https://github.com/EmmaaDy/Portfolio.git
 cd mitt-cv
 npm install
 npm start
 
-### Öppna din webbläsare och gå till [http://localhost:3000](http://localhost:3000) för att se projektet.
+### Öppna din webbläsare och gå till (localhost) för att se projektet.
 
 ## Funktioner
 
