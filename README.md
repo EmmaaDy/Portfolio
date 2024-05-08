@@ -1,48 +1,48 @@
-# Mitt CV - En interaktiv Single Page Application (SPA)
+# My CV - An Interactive Single Page Application (SPA)
 
-## Beskrivning
+## Description
 
-Mitt CV är en interaktiv Single Page Application (SPA) utvecklad med hjälp av React, Redux för global state-hantering och React Router för navigering mellan olika sektioner. Applikationen fungerar som mitt digitala CV och personliga hemsida, där användare kan lära känna mig genom information om mina färdigheter, erfarenheter, projekt och kontaktinformation.
+My CV is an interactive Single Page Application (SPA) developed using React, Redux for global state management, and React Router for navigation between different sections. The application serves as my digital CV and personal website, where users can get to know me through information about my skills, experiences, projects, and contact details.
 
 ## Installation
 
-För att köra projektet lokalt, följ dessa steg:
+To run the project locally, follow these steps:
 
-### Klona projektet från GitHub-repot:
+### Clone the project from the GitHub repository:
 bash
 git clone https://github.com/EmmaaDy/Portfolio.git
-cd mitt-cv
+cd my-cv
 npm install
 npm start
+### Open your browser and go to localhost to view the project.
 
-### Öppna din webbläsare och gå till (localhost) för att se projektet.
+## Features
 
-## Funktioner
+### Navigation
+Use React Router to navigate between different sections or views, including 'About Me', 'Projects', and 'Contact'.
 
-### Navigering
-Använd React Router för att navigera mellan olika sektioner eller vyer, inklusive 'Om mig', 'Projekt' och 'Kontakt'.
+### Local State Management
+Use the useState hook to manage local state in components, such as interactive forms in the contact section.
 
-### Lokal state-hantering
-Använd useState-hook för att hantera lokal state i komponenter, t.ex. för interaktiva formulär i kontaktsektionen.
+### Global State Management
+Implement Redux for global state management, which is used to store and manage data accessed by multiple components, such as the project list.
 
-### Global state-hantering
-Implementera Redux för global state-hantering, som används för att lagra och hantera data som används av flera komponenter, t.ex. projektlistan.
+### API Interaction
+Integrate an external API, like the GitHub API, to automatically display the latest projects on the website.
 
-### API-interaktion
-Integrera ett externt API (t.ex. GitHub API) för att automatiskt visa de senaste projekten på webbplatsen.
-
-## Teknologier och bibliotek
+## Technologies and Libraries
 - React
 - React Router
 - Redux
-- Axios för HTTP-requests
-- CSS för styling
+- Axios for HTTP requests
+- CSS for styling
 
-## Kontakta mig
-Om du har några frågor, förslag eller vill diskutera projektet, tveka inte att kontakta mig:
+## Contact Me
+If you have any questions, suggestions, or would like to discuss the project, do not hesitate to contact me:
 
 - Email: [emma.dybdorf@example.com](mailto:emma.dybdorf@dybdorf.com)
 - LinkedIn: [Emma Dybdorf](https://www.linkedin.com/in/emma-dybdorf-023315290/)
 
-## Licens
-Detta projekt är licensierat under MIT-licensen. Se LICENSE för detaljer.
+## License
+This project is licensed under the MIT License.
+Under this license, you are free to share and adapt the material, provided you give appropriate credit, link to the license, and indicate if changes were made.
