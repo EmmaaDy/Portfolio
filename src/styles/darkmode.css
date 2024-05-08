@@ -47,6 +47,7 @@
 
 .theme-dark .menu.open {
   border-color: #000000; 
+  box-shadow: 0px 4px 8px rgba(244, 243, 243, 0.416); 
 }
 
 .theme-dark .menu a {
