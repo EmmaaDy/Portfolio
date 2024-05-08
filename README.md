@@ -1,8 +1,8 @@
 # My CV - An Interactive Single Page Application (SPA)
 
-![Preview-image-1](/assets/Portfolio.png)
+![Preview-image-1](/src/assets/Portfolio.png)
 
-![Preview-image-2](/assets/Portfolio2.png)
+![Preview-image-2](/src/assets/Portfolio2.png)
 
 ## Description
 
