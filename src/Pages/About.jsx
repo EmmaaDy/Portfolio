@@ -1,6 +1,8 @@
 import React from 'react';
-import '../index.css'; // Include common styles
-import avatar from '../assets/avatar.jpg'; // Import your avatar image
+import '../index.css';
+import '../styles/About.css';
+import '../styles/darkmode.css';
+import avatar from '../assets/avatar.jpg';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'; // Import icons
 
 const About = () => {

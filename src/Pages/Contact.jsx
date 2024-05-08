@@ -1,5 +1,7 @@
 import React from 'react';
-import '../index.css'; // Inkludera gemensamma stilar
+import '../index.css';
+import '../styles/Contact.css';
+import '../styles/darkmode.css';
 import Contactform from '../components/Contactform';
 
 const Contact = () => {

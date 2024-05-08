@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../index.css'; // Inkludera gemensamma stilar
+import '../index.css';
+import '../styles/Projects.css';
+import '../styles/darkmode.css';
 
 const Projects = () => {
   const [repos, setRepos] = useState([]); // State för att lagra repositories

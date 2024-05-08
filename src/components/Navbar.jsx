@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'; // Importera CSS för stilar
+import "../styles/Nav.css";
+import '../styles/darkmode.css';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Tillståndsvariabel för att hålla reda på om menyn är öppen eller stängd

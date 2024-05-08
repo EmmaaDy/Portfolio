@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import '../styles/darkmode.css';
 import '../index.css';
+
 
 const Contactform = () => {
   const [name, setName] = useState('');
@@ -15,7 +17,7 @@ const Contactform = () => {
   };
 
   return (
-    <div className="form-container"> {/* Här lägger du till form-container klassen */}
+    <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -46,7 +48,7 @@ const Contactform = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   );

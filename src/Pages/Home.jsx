@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'; // Inkludera gemensamma stilar
+import '../styles/Button.css';
+import '../styles/Home.css';
+import '../index.css';
+import '../styles/darkmode.css';
 import about_image from '../assets/about_image.jpg';
 import projects_image from '../assets/projects_image.jpg';
 import contact_image from '../assets/contact_image.jpg';
+
 
 const Home = () => {
   return (

@@ -1,9 +1,8 @@
-// Footer.jsx
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import '../Styles/Footer.css'; // Importera CSS-filen för styling
+import "/src/styles/Footer.css";
+import '../styles/darkmode.css';
 
 const Footer = () => {
   return (
@@ -31,4 +30,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
