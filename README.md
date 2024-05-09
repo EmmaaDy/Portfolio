@@ -29,7 +29,7 @@ Use React Router to navigate between different sections or views, including 'Abo
 Use the useState hook to manage local state in components, such as interactive forms in the contact section.
 
 ### Global State Management
-Implement Redux for global state management, which is used to store and manage data accessed by multiple components, such as the project list.
+Implement Redux for global state management, which is used to store and manage data accessed by multiple components.
 
 ### API Interaction
 Integrate an external API, like the GitHub API, to automatically display the latest projects on the website.
@@ -48,5 +48,5 @@ If you have any questions, suggestions, or would like to discuss the project, do
 - LinkedIn: [Emma Dybdorf](https://www.linkedin.com/in/emma-dybdorf-023315290/)
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Emma License.
 Under this license, you are free to share and adapt the material, provided you give appropriate credit, link to the license, and indicate if changes were made.

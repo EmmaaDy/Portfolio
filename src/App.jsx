@@ -1,5 +1,3 @@
-// App.jsx
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider, useSelector } from 'react-redux';
@@ -11,7 +9,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ExampleComponent from './components/ExampleComponent';
-import './App.css'; // Gemensam CSS för båda lägen
+import './App.css'; 
 
 function AppWrapper() {
     return (
@@ -26,7 +24,7 @@ function App() {
 
   return (
     <Router>
-      <div className={`theme-${themeMode}`}> {/* Tilldela klassen baserat på temaläget */}
+      <div className={`theme-${themeMode}`}> {/* theme */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
