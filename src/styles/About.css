@@ -1,3 +1,4 @@
+/* Container styles for the about me section */
 .aboutme-container {
   margin: 0px auto;
   display: flex;
@@ -6,56 +7,64 @@
   text-align: center;
   max-width: 500px; 
 }
-  
+
+/* Header styles for the about me section */
 .aboutme-header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-  
+
+/* Avatar styles for the about me section */
 .aboutme-avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
 }
-  
+
+/* Heading styles for the about me section */
 .aboutme-heading {
   font-size: 2rem;
   color: #333;
 }
-  
+
+/* Description styles for the about me section */
 .aboutme-description {
   font-size: 1rem;
   color: #666;
   padding: 10px;
 }
-  
+
+/* Subheading styles for the about me section */
 .aboutme-subheading {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 20px;
 }
-  
+
+/* Skills container styles for the about me section */
 .aboutme-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 0;
 }
-  
+
+/* Skill box styles for the about me section */
 .skill-box {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-  
+
+/* Skill icon styles for the about me section */
 .skill-icon {
   margin-right: 5px;
 }
-  
+
+/* Background styles for the about me section */
 .aboutme-background {
   background-color: white;
   padding: 10px;
   text-align: center;
 }
-  

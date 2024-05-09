@@ -1,3 +1,4 @@
+/* Container styles for the projects section */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -9,23 +10,27 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
+/* Heading styles for the projects section */
 .projects-heading {
     color: #333;
     text-align: center;
 }
-  
+
+/* Description styles for the projects section */
 .projects-description {
     text-align: center;
     color: #666;
     margin: 10px auto 10px
 }
-  
+
+/* List styles */
 ul {
     list-style-type: none;
     padding: 0;
 }
-  
+
+/* List item styles */
 li {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -34,7 +39,8 @@ li {
     border-radius: 4px;
     transition: transform 0.2s ease-in-out;
 }
-  
+
+/* Link styles */
 .projects-container a, 
 .projects-container a:visited, 
 .projects-container a:hover, 

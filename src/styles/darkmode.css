@@ -5,6 +5,7 @@
 .theme-dark {
   background-color: black;
 }
+
 /*Header*/
 
 .theme-dark .header {
@@ -23,6 +24,7 @@
 }
 
 /*Button*/
+
 .theme-dark .button-img {
   filter: invert(100%);
 }
@@ -71,11 +73,11 @@
   background-color: black;
 }
 .theme-dark .home-gallery {
-  background-color: black; /* Bakgrundsfärg för galleriet */
+  background-color: black;
 }
 
 .theme-dark .home-link {
-  color: white; /* Färg för länkarna runt bilderna */
+  color: white; 
 }
 
 .theme-dark .gallery-image {
@@ -93,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* Justera färgen efter behov */
+  background: rgba(0, 0, 0, 0.8); 
   z-index: 1;
 }
 
@@ -118,8 +120,9 @@
 }
 
 /*Footer*/
+
 .theme-dark .footer {
-  margin-top: 9px; /* Lägg till lite mellanrum över ikonerna */
+  margin-top: 9px;
   background-color: #000; 
 }
     
@@ -256,7 +259,7 @@
   background-color: #545454;
 }
 
-/* Responsiv design: Anpassningar för mindre skärmar */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
   .contact-container,
   .form-container {

@@ -1,3 +1,4 @@
+/* Line styles */
 .line {
   width: 25px;
   height: 3px;
@@ -6,17 +7,20 @@
   transition: transform 0.3s ease; 
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   justify-content: center; 
   align-items: center;
 }
 
+/* Hamburger styles */
 .hamburger {
   display: block; 
   cursor: pointer;
 }
 
+/* Menu styles */
 .menu {
   display: none;
   flex-direction: column;
@@ -34,26 +38,31 @@ nav {
   opacity: 0.95;
 }
 
+/* Open menu styles */
 .menu.open {
   display: flex; 
   border-color: #000000; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+/* Menu link styles */
 .menu a {
   text-decoration: none; 
   margin-bottom: 10px; 
   color: black;
 }
 
+/* Open line styles */
 .line.open.line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
+/* Open line styles */
 .line.open.line2 {
   opacity: 0;
 }
 
+/* Open line styles */
 .line.open.line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }

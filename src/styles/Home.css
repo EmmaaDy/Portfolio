@@ -1,30 +1,36 @@
+/* Home container styles */
 .home-container {
   text-align: center; 
   padding: 20px;
   margin-bottom: 28px;
 }
-  
+
+/* Home title styles */ 
 .home-title {
   font-size: 2rem; 
   margin-bottom: 10px; 
 }
-  
+
+/* Home text styles */
 .home-text {
   font-size: 1.2rem; 
   color: #555; 
   margin-bottom: 20px; 
 }
-  
+
+/* Home gallery styles */  
 .home-gallery {
   display: flex; 
   justify-content: center;
 }
-  
+
+/* Home link styles */  
 .home-link {
   position: relative; 
   margin: 0 10px; 
 }
 
+/* Gallery image styles */
 .gallery-image {
   width: 200px; 
   height: 200px; 
@@ -33,7 +39,8 @@
   margin-top: 20px; 
 
 }
-  
+
+/* Gallery caption styles */  
 .gallery-caption {
   position: absolute; 
   top: 50%; 
@@ -46,10 +53,12 @@
   transition: opacity 0.3s ease; 
 }
 
+/* Hover styles for gallery image */
 .home-link:hover .gallery-image {
   filter: blur(3px); 
 }
 
+/* Hover styles for gallery caption */
 .home-link:hover .gallery-caption {
   opacity: 1; 
 }

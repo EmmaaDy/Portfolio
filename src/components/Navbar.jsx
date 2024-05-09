@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom';
 import "../styles/Nav.css";
 import '../styles/darkmode.css';
 
-
+// Component for the navigation bar
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Tillståndsvariabel för att hålla reda på om menyn är öppen eller stängd
+  const [isOpen, setIsOpen] = useState(false); // State variable to track whether the menu is open or closed
 
-  // Funktion för att växla mellan öppen och stängd meny
+  // Function to toggle between open and closed menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <nav>
-      {/* Hamburgerikonsymbol */}
+      {/* Hamburger icon */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className={isOpen ? 'line line1 open' : 'line'}></div>
         <div className={isOpen ? 'line line2 open' : 'line'}></div>
         <div className={isOpen ? 'line line3 open' : 'line'}></div>
       </div>
-      {/* Meny länkar */}
+      {/* Menu links */}
       <div className={isOpen ? 'menu open' : 'menu'}>
         <Link to="/" onClick={toggleMenu}>Home</Link>
         <Link to="/about" onClick={toggleMenu}>About Me</Link>

@@ -8,14 +8,14 @@ import about_image from '../assets/about_image.jpg';
 import projects_image from '../assets/projects_image.jpg';
 import contact_image from '../assets/contact_image.jpg';
 
-
+// Component for the home page
 const Home = () => {
   return (
     <div className="home-container">
       <h1 className="home-title">Welcome to My Portfolio!</h1>
       <p className="home-text">Explore my website to learn more about me and my projects.</p>
       
-      {/* Bildgalleri med länkar */}
+      {/* Image gallery with links */}
       <div className="home-gallery">
         <Link to="/about" className="home-link">
           <img src={about_image} alt="Om mig" className="gallery-image" />

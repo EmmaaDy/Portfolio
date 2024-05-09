@@ -4,6 +4,7 @@ import '../styles/Contact.css';
 import '../styles/darkmode.css';
 import Contactform from '../components/Contactform';
 
+// Component for the contact page
 const Contact = () => {
   return (
     <div className="contact-container">

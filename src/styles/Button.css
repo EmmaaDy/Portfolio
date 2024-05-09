@@ -1,3 +1,4 @@
+/* Button container */
 .button-container {
   display: flex;
   justify-content: flex-end;
@@ -6,6 +7,7 @@
   height: 100%;
 }
 
+/* Button image */
 .button-img {
   width: 80px; 
   height: auto; 

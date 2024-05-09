@@ -4,10 +4,12 @@ import { toggleTheme } from "../redux/store";
 import Button from "../assets/Click.png";
 import "../styles/Button.css";
 
+// Component for toggling the theme
 const ButtonToggleTheme = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.mode);
 
+  // Function to handle button click and toggle theme
   const handleClick = () => {
     dispatch(toggleTheme());
   };

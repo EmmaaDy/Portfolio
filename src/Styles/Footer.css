@@ -1,12 +1,14 @@
+/* Footer styles */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9px; /* Lägg till lite mellanrum över ikonerna */
+  margin-top: 9px; 
 }
 
+/* Footer link styles */
 .footer-link {
-  margin: 0 10px; /* Lägg till lite mellanrum mellan ikonerna */
-  font-size: 24px; /* Gör ikonerna större */
-  color: #1679b7; /* Exempel på färg */
+  margin: 0 10px; 
+  font-size: 24px; 
+  color: #1679b7; 
 }

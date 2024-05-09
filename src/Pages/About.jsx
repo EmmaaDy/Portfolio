@@ -5,6 +5,7 @@ import '../styles/darkmode.css';
 import avatar from '../assets/avatar.jpg';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'; // Import icons
 
+// Component for the About Me section
 const About = () => {
   return (
     <div className="aboutme-container">

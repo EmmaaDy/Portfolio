@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../index.css';
-import '../styles/Projects.css';
-import '../styles/darkmode.css';
+import '../styles/Projects.css'; 
+import '../styles/darkmode.css'; 
 
 const Projects = () => {
-  const [repos, setRepos] = useState([]); // State för att lagra repositories
+  const [repos, setRepos] = useState([]); // State to store repositories
 
   useEffect(() => {
     axios.get('https://api.github.com/users/EmmaaDy/repos')
       .then(response => {
-        setRepos(response.data); // Spara data i state
+        setRepos(response.data); // Save data in state
       })
       .catch(error => console.error('Error fetching data:', error));
-  }, []); // Tom dependency array för att köra endast vid första render
+  }, []); // Empty dependency array to run only on first render
 
   return (
-    <div className="projects-container">
-      <h1 className="projects-heading">My Projects</h1>
-      <p className="projects-description">Here are some of the projects I have worked on.</p>
+    <div className="projects-container"> {/* Container styles for the projects section */}
+      <h1 className="projects-heading">My Projects</h1> {/* Projects heading */}
+      <p className="projects-description">Here are some of the projects I have worked on.</p> {/* Projects description */}
       <ul>
         {repos.map(repo => (
           <li key={repo.id}>

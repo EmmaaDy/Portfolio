@@ -1,6 +1,10 @@
-*{
+/*
+   Reset CSS to set the box model of all elements to 'border-box'
+   and remove default margins and paddings.
+*/
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;  /* Exempel på bakgrundsfärg */
-}  
+  background-color: white; /* Set background color to white for all elements */
+}

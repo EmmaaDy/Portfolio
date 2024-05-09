@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import '../styles/darkmode.css';
 import '../index.css';
 
-
+// Contact form component
 const Contactform = () => {
+
+  // State variables for form inputs
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  // Function to handle form submission
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission behavior
     console.log('Form submitted:', { name, email, message });
     setName('');
     setEmail('');

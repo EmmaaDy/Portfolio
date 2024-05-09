@@ -4,8 +4,10 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import "/src/styles/Footer.css";
 import '../styles/darkmode.css';
 
+// Footer component displaying social media links
 const Footer = () => {
   return (
+    // Footer section
     <footer className="footer">
       {/* LinkedIn-ikon */}
       <a
