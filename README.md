@@ -32,10 +32,12 @@ I utilized the useState hook for managing local state in components, such as int
 For global state management, I implemented Redux, which is used to store and manage data accessed by multiple components. Redux provides a centralized state management solution, making it easier to maintain and update application data.
 
 ### API Interaction
-To automatically display the latest projects on the website, I integrated an external API, like the GitHub API. This enhances the user experience by providing up-to-date information and demonstrates real-time data interaction within the application.
+In my project, I use the useEffect hook to handle the data fetching process from my external GitHub API. This allows me to efficiently retrieve and update the necessary data. To automatically display the latest projects on the website. This enhances the user experience by providing up-to-date information and demonstrates real-time data interaction within the application.
 
 ## Technologies and Libraries
 - React
+- UseState hook
+- UseEffect hook
 - React Router
 - Redux
 - Axios for HTTP requests
