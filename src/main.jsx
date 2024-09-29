@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store.js';
 import App from './App.jsx';
 import './index.css';
-import './styles/darkmode.css';
+import '../src/Styles/darkmode.css';
 
 // Get the container element where the app will be mounted
 const container = document.getElementById('root');

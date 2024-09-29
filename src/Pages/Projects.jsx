@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../index.css';
-import '../styles/Projects.css'; 
-import '../styles/darkmode.css'; 
+import '../Styles/Projects.css'; 
+import '../Styles/darkmode.css'; 
 
 const Projects = () => {
   const [repos, setRepos] = useState([]); // State to store repositories

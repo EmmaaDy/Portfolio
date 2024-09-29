@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../redux/store";
 import Button from "../assets/Click.png";
-import "../styles/Button.css";
+import "../Styles/Button.css";
 
 // Component for toggling the theme
 const ButtonToggleTheme = () => {

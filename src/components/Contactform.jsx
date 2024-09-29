@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/darkmode.css';
+import '../Styles/darkmode.css';
 import '../index.css';
 
 // Contact form component

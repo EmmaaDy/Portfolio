@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import "../styles/Nav.css";
-import '../styles/darkmode.css';
+import "../Styles/Nav.css";
+import '../Styles/darkmode.css';
 
 // Component for the navigation bar
 const Navbar = () => {

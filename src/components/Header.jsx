@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar'; 
-import '../styles/Button.css';
-import '../styles/darkmode.css';
-import "/src/styles/Header.css";
+import '../Styles/Button.css';
+import '../Styles/darkmode.css';
+import "/src/Styles/Header.css";
 import { useSelector } from 'react-redux';
 import ButtonToggleTheme from './ButtonToggleTheme';
 

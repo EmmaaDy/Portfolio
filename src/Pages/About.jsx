@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
-import '../styles/About.css';
-import '../styles/darkmode.css';
+import '../Styles/About.css';
+import '../Styles/darkmode.css';
 import avatar from '../assets/avatar.jpg';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'; // Import icons
 
