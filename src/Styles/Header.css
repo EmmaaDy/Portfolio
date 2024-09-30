@@ -1,10 +1,9 @@
 /* Header styles */
 .header {
   background-color: white; 
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   color: black;
-  margin-bottom: 10px;
 }
 
 /* Header h1 styles */
@@ -21,4 +20,10 @@
   font-size: 1.5em; 
   color: #1679b7; 
   font-weight: bold; 
+}
+
+.header-title {
+  color: inherit; /* Arv färg från förälder (header) */
+  text-decoration: none; /* Ingen understrykning */
+  margin-top: 20px;
 }

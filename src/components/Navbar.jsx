@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import "../Styles/Nav.css";
-import '../Styles/darkmode.css';
+import "../styles/Nav.css";
+import '../styles/darkmode.css';
 
 // Component for the navigation bar
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State variable to track whether the menu is open or closed
-
-  // Function to toggle between open and closed menu
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Navbar = ({ isOpen, toggleMenu, closeMenu }) => { // Accept props
   return (
     <nav>
       {/* Hamburger icon */}
@@ -21,11 +14,11 @@ const Navbar = () => {
         <div className={isOpen ? 'line line3 open' : 'line'}></div>
       </div>
       {/* Menu links */}
-      <div className={isOpen ? 'menu open' : 'menu'}>
-        <Link to="/" onClick={toggleMenu}>Home</Link>
-        <Link to="/about" onClick={toggleMenu}>About Me</Link>
-        <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-        <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+      <div className={`menu ${isOpen ? 'open' : ''}`}>
+        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/about" onClick={closeMenu}>About Me</Link>
+        <Link to="/projects" onClick={closeMenu}>Projects</Link>
+        <Link to="/contact" onClick={closeMenu}>Contact</Link>
       </div>
     </nav>
   );

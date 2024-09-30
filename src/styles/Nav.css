@@ -1,38 +1,29 @@
-/* Line styles */
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px;
-  transition: transform 0.3s ease; 
-}
-
 /* Navigation styles */
 nav {
   display: flex;
   justify-content: center; 
-  align-items: center;
+  align-items: center; /* Align items to center vertically */
+  position: relative; /* Set position to relative to control absolute positioning */
 }
 
 /* Hamburger styles */
 .hamburger {
   display: block; 
   cursor: pointer;
+  position: absolute; /* Position it absolutely to keep it in the center */
+  top: 50px; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%); /* Center the hamburger icon */
 }
 
 /* Menu styles */
 .menu {
-  display: none;
+  display: none; /* Initially hidden */
   flex-direction: column;
-  position: fixed;
-  top: 25%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
+  max-width: 40rem;
   border: 1px solid #0f0f0f;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 2px 5px rgba(252, 252, 252, 0.1);
   z-index: 1;
   opacity: 0.95;
@@ -40,7 +31,7 @@ nav {
 
 /* Open menu styles */
 .menu.open {
-  display: flex; 
+  display: flex; /* Show the menu when open */
   border-color: #000000; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -52,17 +43,24 @@ nav {
   color: black;
 }
 
+/* Line styles */
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+  transition: transform 0.3s ease; 
+}
+
 /* Open line styles */
 .line.open.line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-/* Open line styles */
 .line.open.line2 {
   opacity: 0;
 }
 
-/* Open line styles */
 .line.open.line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }

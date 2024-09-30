@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import "../Styles/Footer.css";
-import '../Styles/darkmode.css';
+import "../styles/Footer.css";
+import '../styles/darkmode.css';
 
 // Footer component displaying social media links
 const Footer = () => {

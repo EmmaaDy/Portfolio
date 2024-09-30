@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../index.css';
-import '../Styles/Projects.css'; 
-import '../Styles/darkmode.css'; 
+import '../styles/Projects.css'; 
+import '../styles/darkmode.css'; 
 
 const Projects = () => {
   const [repos, setRepos] = useState([]); // State to store repositories
@@ -10,7 +10,9 @@ const Projects = () => {
   useEffect(() => {
     axios.get('https://api.github.com/users/EmmaaDy/repos')
       .then(response => {
-        setRepos(response.data); // Save data in state
+        // Sort repositories by creation date in descending order (newest first)
+        const sortedRepos = response.data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        setRepos(sortedRepos); // Save sorted data in state
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []); // Empty dependency array to run only on first render

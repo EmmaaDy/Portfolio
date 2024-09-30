@@ -136,6 +136,9 @@
   fill: white;
   background-color: #000;
 }
+.theme-dark .footer-link:hover{
+  color: #1679b7;
+}
 
 /*About*/
 
@@ -219,7 +222,9 @@
   margin: 17px auto;
   padding: 20px;
 }
-
+.theme-dark .contact-heading {
+  margin-top: 90px;
+}
 .theme-dark .contact-heading {
   color: white; 
 }
@@ -258,6 +263,13 @@
 
 .theme-dark .form-container button:hover {
   background-color: #545454;
+}
+
+.theme-dark .arrow {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
 }
 
 /* Responsive design adjustments */

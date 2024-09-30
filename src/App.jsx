@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider, useSelector } from 'react-redux';
 import store from './redux/store';
-import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
-import Home from '../src/Pages/Home'; 
-import About from '../src/Pages/About';
-import Projects from '../src/Pages/Projects';
-import Contact from '../src/Pages/Contact';
-import ExampleComponent from '../src/components/ExampleComponent';
+import Header from '../src/components/Header.jsx';
+import Footer from '../src/components/Footer.jsx';
+import Home from './Pages/Home.jsx'; 
+import About from './pages/About.jsx';
+import Projects from './pages/Projects.jsx';
+import Contact from './pages/Contact.jsx';
+import ExampleComponent from '../src/components/ExampleComponent.jsx';
 
 // Wrapper component to provide Redux store to the entire app
 function AppWrapper() {

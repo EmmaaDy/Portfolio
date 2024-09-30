@@ -1,64 +1,72 @@
 /* Home container styles */
 .home-container {
   text-align: center; 
-  padding: 20px;
-  margin-bottom: 28px;
+  display: flex; 
+  flex-direction: column;
+  transition: margin-top 0.3s ease; /* Add transition for smooth effect */
+  margin-top: 110px; /* Default margin-top when menu is closed */
 }
 
-/* Home title styles */ 
+/* När menyn är öppen, minska margin-top */
+.menu.open {
+  margin-top: 6rem; /* Minskat mellanrum när menyn är öppen */
+}
+
+/* Home title styles */
 .home-title {
-  font-size: 2rem; 
-  margin-bottom: 10px; 
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 /* Home text styles */
 .home-text {
-  font-size: 1.2rem; 
-  color: #555; 
-  margin-bottom: 20px; 
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-/* Home gallery styles */  
+/* Home gallery styles */
 .home-gallery {
-  display: flex; 
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
-/* Home link styles */  
+/* Home link styles */
 .home-link {
-  position: relative; 
-  margin: 0 10px; 
+  position: relative;
+  margin: 0 10px;
 }
 
 /* Gallery image styles */
 .gallery-image {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  transition: filter 0.3s ease; 
-  margin-top: 20px; 
-
+  transition: filter 0.3s ease;
+  margin-top: 20px;
 }
 
-/* Gallery caption styles */  
+/* Gallery caption styles */
 .gallery-caption {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 10px; 
-  border-radius: 5px; 
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Hover styles for gallery image */
 .home-link:hover .gallery-image {
-  filter: blur(3px); 
+  filter: blur(3px);
 }
 
 /* Hover styles for gallery caption */
 .home-link:hover .gallery-caption {
-  opacity: 1; 
+  opacity: 1;
 }
+
