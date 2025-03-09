@@ -1,8 +1,5 @@
 # My CV - An Interactive Single Page Application (SPA)
 
-## 🌐 Länk till Digitalt CV
-Mitt digitala cv kan nås här: [Digitalt cv](http://digitalt-cv.s3-website.eu-north-1.amazonaws.com/)
-
 ![Preview-image-1](/src/assets/Portfolio.png)
 
 ![Preview-image-2](/src/assets/Portfolio2.png)
